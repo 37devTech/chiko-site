@@ -9,10 +9,114 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap"
       rel="stylesheet"
     />
+    <style>
+      body {
+        font-family: "Playfair Display", serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .banner,
+      .about,
+      .contact-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(229, 223, 220);
+        padding: 40px 20px;
+      }
+
+      #pendant,
+      #bamboo-broach,
+      #profile-pic {
+        max-width: 30%;
+        height: auto;
+      }
+
+      h1 {
+        font-size: 4rem;
+        margin: 20px;
+        text-align: center;
+      }
+
+      .tag-line {
+        font-size: 1.25rem;
+        text-align: center;
+      }
+
+      .section {
+        text-align: center;
+        font-size: 2.5rem;
+        margin: 40px 0 20px;
+        width: 100%;
+      }
+
+      .collection {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 0 20px 40px;
+      }
+
+      .jewelry {
+        width: 225px;
+        height: 200px;
+        border: thin solid #555;
+        padding: 5px;
+        box-sizing: border-box;
+      }
+
+      .product-description {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .about-text {
+        max-width: 600px;
+        font-size: 1rem;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .about-chiko {
+        font-size: 1.75rem;
+        margin-bottom: 10px;
+      }
+
+      .shop-details {
+        max-width: 600px;
+        font-size: 1rem;
+        text-align: center;
+        padding: 20px;
+      }
+
+      @media (max-width: 768px) {
+        #pendant,
+        #bamboo-broach,
+        #profile-pic {
+          max-width: 80%;
+          height: auto;
+        }
+
+        h1 {
+          font-size: 2.5rem;
+        }
+
+        .section {
+          font-size: 2rem;
+        }
+
+        .jewelry {
+          width: 90%;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="banner">
-      <div><img id="pendant" src="chiko_pendant.jpg" /></div>
+      <img id="pendant" src="chiko_pendant.jpg" alt="Pendant" />
       <div>
         <h1>
           CHIKO <br />
@@ -21,25 +125,27 @@
         <p class="tag-line">Elegant pieces you'll keep forever.</p>
       </div>
     </div>
+
     <h2 class="section">NEW COLLECTION</h2>
     <div class="collection">
       <div>
-        <img class="jewelry" src="IMG_4939.jpg" />
+        <img class="jewelry" src="IMG_4939.jpg" alt="Ring" />
         <p class="product-description">プラチナアコヤパールリング</p>
       </div>
       <div>
-        <img class="jewelry" src="IMG_4948.jpg" />
+        <img class="jewelry" src="IMG_4948.jpg" alt="Ring" />
         <p class="product-description">プラチナレッドルビーリング</p>
       </div>
       <div>
-        <img class="jewelry" src="IMG_4944.jpg" />
+        <img class="jewelry" src="IMG_4944.jpg" alt="Ring" />
         <p class="product-description">エメラルドグリーンリング</p>
       </div>
       <div>
-        <img class="jewelry" src="IMG_4913.jpg" />
+        <img class="jewelry" src="IMG_4913.jpg" alt="Necklace" />
         <p class="product-description">パールネックレス</p>
       </div>
     </div>
+
     <div class="about">
       <div class="about-text">
         <h2 class="about-chiko">ABOUT CHIKO</h2>
@@ -49,33 +155,31 @@
           一生の思い出となるような特別な瞬間を彩ります。
         </p>
       </div>
-      <div>
-        <img id="bamboo-broach" src="IMG_4958.jpg" />
-      </div>
+      <img id="bamboo-broach" src="IMG_4958.jpg" alt="Broach" />
     </div>
+
     <h2 class="section">COLLECTION</h2>
     <div class="collection">
       <div>
-        <img class="jewelry" src="IMG_4931.jpg" />
+        <img class="jewelry" src="IMG_4931.jpg" alt="Ring" />
         <p class="product-description">K18メキシコオパールリング</p>
       </div>
       <div>
-        <img class="jewelry" src="IMG_4932.jpg" />
+        <img class="jewelry" src="IMG_4932.jpg" alt="Ring" />
         <p class="product-description">K18 メキシコオパールリング</p>
       </div>
       <div>
-        <img class="jewelry" src="IMG_4935.jpg" />
+        <img class="jewelry" src="IMG_4935.jpg" alt="Ring" />
         <p class="product-description">K18 ゴールデンパールリング</p>
       </div>
       <div>
-        <img class="jewelry" src="IMG_4936.jpg" />
+        <img class="jewelry" src="IMG_4936.jpg" alt="Ring" />
         <p class="product-description">K18 ゴールデンパールリング</p>
       </div>
     </div>
+
     <div class="contact-section">
-      <div>
-        <img id="profile-pic" src="IMG_4968.jpg" />
-      </div>
+      <img id="profile-pic" src="IMG_4968.jpg" alt="Profile" />
       <div class="shop-details">
         <h2 class="contact-details">CONTACT DETAILS</h2>
         <p>Address</p>
